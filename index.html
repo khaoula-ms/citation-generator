@@ -7,38 +7,43 @@
     <title>AI Citation Generator</title>
   </head>
   <body>
-    <header><h1>AI Citation Generator</h1></header>
-    <main>
-      <form>
-        <input
-          type="text"
-          id=""
-          placeholder="Enter the topic of the citation"
-          autofocus
-          autocomplete="off"
-          required
-        />
-        <input type="submit" value="submit" />
-      </form>
-      <div>
-        the citation <br />
-        author
-      </div>
-    </main>
-    <footer>
-      This AI projet was coded by
-      <a href="https://github.com/khaoula-ms" target="_blank"
-        >Khaoula Messaoudi</a
-      >
-      and is open-sourced on
-      <a href="https://github.com/khaoula-ms/citation-generator" target="_blank"
-        >Github</a
-      >
-      and is hosted on
-      <a href="https://citation-generator-ms.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <header><h1>AI Citation Generator</h1></header>
+      <main>
+        <form>
+          <input
+            type="text"
+            id=""
+            placeholder="Enter the topic of the citation"
+            autofocus
+            autocomplete="off"
+            required
+            class="instruction"
+          />
+          <input type="submit" value="submit" class="submit-button" />
+        </form>
+        <div class="citation">
+          the citation <br />
+          author
+        </div>
+      </main>
+      <footer>
+        This AI projet was coded by
+        <a href="https://github.com/khaoula-ms" target="_blank"
+          >Khaoula Messaoudi</a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/khaoula-ms/citation-generator"
+          target="_blank"
+          >Github</a
+        >
+        and is hosted on
+        <a href="https://citation-generator-ms.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
