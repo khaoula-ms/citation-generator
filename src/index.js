@@ -15,7 +15,8 @@ function generateCitation(event) {
     "you are a very knowledgeable AI Assistant who helps people get short helpful precise citation in basic HTML.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   let citation = document.querySelector("#citation");
-  citation.innerHTML = `loading... please wait 🤔`;
+  citation.classList.remove("hidden");
+  citation.innerHTML = `<div class="blink_me">⏳</div> looking for a Citatin about ${userInstruction.value} <br /> please wait... 🤔`;
   axios.get(apiUrl).then(displayCitation);
 }
 let generatorForm = document.querySelector("#citation-generator");

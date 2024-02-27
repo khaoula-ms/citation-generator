@@ -12,19 +12,22 @@
     <div class="container">
       <header><h1>AI Citation Generator</h1></header>
       <main>
-        <form id="citation-generator">
-          <input
-            type="text"
-            id="instruction"
-            placeholder="Enter the topic of the citation"
-            autofocus
-            autocomplete="off"
-            required
-            class="instruction"
-          />
-          <input type="submit" value="submit" class="submit-button" />
-        </form>
-        <div class="citation" id="citation"></div>
+        <div class="form-container">
+          <form id="citation-generator">
+            <input
+              type="text"
+              id="instruction"
+              placeholder="Enter the topic of the citation in any language"
+              autofocus
+              autocomplete="off"
+              required
+              class="instruction"
+            />
+            <input type="submit" value="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e Flower in french, freedom in spanish</div>
+        </div>
+        <div class="citation hidden" id="citation"></div>
       </main>
       <footer>
         This AI projet was coded by
